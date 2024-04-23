@@ -1,0 +1,50 @@
+.containerSelect {
+
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 234, 0);
+    border-bottom: 2px solid red;
+    padding: 30px;
+}
+
+form {
+
+    border: 2px solid black !important;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 1em;
+    background-color:  rgb(182, 231, 239) !important;
+    
+}
+
+button {
+
+    margin-top: 1em;
+    width: 100%;
+    background-color: red !important;
+
+}
+
+button:hover {
+    border: 1px solid transparent !important;
+    box-shadow: 2px 2px 2px 2px black !important;
+}
+
+.mapStyle {
+
+    display: none;
+    justify-content: center;
+    opacity: 0;
+    height: auto;
+   
+}
+
+.containerItem {
+
+    width: 90%;
+    height: auto !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px black;
+}

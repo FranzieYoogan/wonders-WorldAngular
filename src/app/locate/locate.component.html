@@ -1,0 +1,39 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+<app-header></app-header>
+
+
+<section class="containerSelect">
+    
+
+<form >
+<select class="form-select" id="locationInput" aria-label="Default select example">
+  <option selected>Choose one of the 8 world's wonders</option>
+  <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.122888502263!2d12.489655975235175!3d41.89021416465687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColiseu!5e0!3m2!1spt-BR!2sbr!4v1713899866239!5m2!1spt-BR!2sbr">The Colosseum in Italy</option>
+  <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27552.521865956438!2d35.46255543373453!3d30.320662281889273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15016930021ab6b1%3A0xe43a697bc3a3e0b9!2sWadi%20Musa%2C%20Jord%C3%A2nia!5e0!3m2!1spt-BR!2sbr!4v1713899904164!5m2!1spt-BR!2sbr">Petra in Jordan</option>
+  <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.638286027344!2d-88.57035752570394!3d20.68428989952265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5138c6e391c0e7%3A0x7c1ea0a168994d9a!2zQ2hpY2jDqW4gSXR6w6E!5e0!3m2!1spt-BR!2sbr!4v1713899934075!5m2!1spt-BR!2sbr">Chichén Itzá in Mexico</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.954274762315!2d-43.21306212544659!3d-22.951911039483896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fd5984aa13f%3A0x9dc984d7019502de!2sCristo%20Redentor!5e0!3m2!1spt-BR!2sbr!4v1713900193168!5m2!1spt-BR!2sbr">Christ the Redeemer, Brazil</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7770.246440420818!2d-72.52980711176181!3d-13.154626701364185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916d9a83b8c1ff35%3A0x8489a922d6a55182!2sMachu%20Picchu%20pueblo%2008681%2C%20Peru!5e0!3m2!1spt-BR!2sbr!4v1713900236656!5m2!1spt-BR!2sbr">Machu Picchu, Peru</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.0088687116913!2d31.13162967462895!3d29.97917512166191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584587ac8f291b%3A0x810c2f3fa2a52424!2zUGlyw6JtaWRlIGRlIFF1w6lvcHM!5e0!3m2!1spt-BR!2sbr!4v1713900310272!5m2!1spt-BR!2sbr">The Great Pyramid of Giza, Egypt</option>
+    <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.400402283325!2d78.039567274515!3d27.175149548764967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1spt-BR!2sbr!4v1713900366527!5m2!1spt-BR!2sbr">Taj Mahal, India</option>
+        <option value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9587743462944!2d116.56779997515083!3d40.43191175471661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f121d7687f2ccf%3A0xd040259b950522df!2sMuralha%20da%20China!5e0!3m2!1spt-BR!2sbr!4v1713900441542!5m2!1spt-BR!2sbr">The Great Wall of China</option>
+</select>
+    
+  
+  <button type="button" (click)="locate()" class="btn btn-primary">Submit</button>
+</form>
+</section>
+
+<section class="mapStyle" id="mapStyle">
+    
+    <div class="containerItem">
+        
+
+
+<iframe id="iframe" src="" width="100%" height="800px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</section>

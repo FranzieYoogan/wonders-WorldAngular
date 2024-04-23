@@ -1,0 +1,19 @@
+.navIcon {
+
+    width: 70px;
+
+}
+
+.navbar-brand {
+
+    font-weight: 900 !important;
+    color: black;
+  
+
+}
+
+.navbar {
+
+    background-color: rgb(182, 231, 239) !important;
+    border-bottom: 2px solid black;
+}
